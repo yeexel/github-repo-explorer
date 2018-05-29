@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# env file
+.env
+
 # testing
 /coverage
 

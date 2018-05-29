@@ -1,5 +1,5 @@
 const GITHUB_API_BASE_URL = 'https://api.github.com'
-const GITHUB_ACCESS_TOKEN = 'f475a493d7f2bcfc397ff359b6e05b3df3a8b39b'
+const GITHUB_ACCESS_TOKEN = process.env.REACT_APP_GITHUB_ACCESS_TOKEN
 
 const fetchAsync = async (url) => {
   const response = await fetch(url)
