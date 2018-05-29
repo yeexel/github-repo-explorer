@@ -71,10 +71,10 @@ class Index extends Component {
   constructor(props) {
     super(props)
 
-    this.emailInputRef = null
+    this.userNameInputRef = null
 
-    this.setEmailInputRef = input => {
-      this.emailInputRef = input
+    this.setUserNameInputRef = input => {
+      this.userNameInputRef = input
     }
   }
 
@@ -140,7 +140,11 @@ class Index extends Component {
   }
 
   handleSearchButton = () => {
-    this.loadData(this.emailInputRef.value)
+    const userNameInput = this.userNameInputRef.value
+
+    this.setState({ page: PAGE_NUMBER }, () => {
+      this.loadData(userNameInput)
+    })
 
     this.toggleUserNameChangeModal()
   }
@@ -204,9 +208,9 @@ class Index extends Component {
               <TextField
                 autoFocus
                 margin="dense"
-                id="email"
+                id="github-username"
                 label="GitHub Username"
-                inputRef={this.setEmailInputRef}
+                inputRef={this.setUserNameInputRef}
                 fullWidth
               />
             </DialogContent>
