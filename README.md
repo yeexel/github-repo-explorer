@@ -21,3 +21,8 @@ Install packages and run the dev server
 npm install
 npm run start
 ```
+
+
+## Demo
+
+[https://github-repo-explorer.herokuapp.com/](https://github-repo-explorer.herokuapp.com/)
