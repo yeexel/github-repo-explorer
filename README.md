@@ -25,6 +25,6 @@ npm run start
 
 ## Demo
 
-[https://github-repo-explorer.herokuapp.com/](https://github-repo-explorer.herokuapp.com/)
+[https://github-repo-explorer.herokuapp.com](https://github-repo-explorer.herokuapp.com/)
 
 ![alt-text](https://media.giphy.com/media/1hM7L5hW3gZKvyl9RP/giphy.gif)
